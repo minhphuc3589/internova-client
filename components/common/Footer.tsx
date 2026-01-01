@@ -8,8 +8,8 @@ import { FaTwitter } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="w-full text-gray-500 px-8 py-4">
-            <div className="border-b grid grid-cols-6 gap-10 pb-4 mb-4 items-stretch">
-                <div className="flex flex-col">
+            <div className="border-b grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] flex-wrap gap-10 pb-4 mb-4 items-stretch">
+                <div className="flex flex-col gap-2">
                     <Image 
                         src="/assets/main_logo/horizontal_logo.jpg"
                         alt=""
@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>Your destination for modern living and cutting-egde tech.</p>
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-2">
                     <h1 className="text-black font-bold text-lg h-[50px]">SHOP</h1>
                     <ul className="flex flex-col gap-2">
                         <li>All Products</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-2">
                     <h1 className="text-black font-bold text-lg h-[50px]">SUPPORT</h1>
                     <ul className="flex flex-col gap-2">
                         <li>About Us</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-2">
                     <h1 className="text-black font-bold text-lg h-[50px]">PRIVACY</h1>
                     <ul className="flex flex-col gap-2">
                         <li>Privacy Policy</li>
@@ -49,12 +49,14 @@ const Footer = () => {
                     </ul>
                 </div>
                 
-                <div className="flex flex-col col-span-2">
+                <div className="flex flex-col col-span-2 gap-2">
                     <h1 className="text-black font-bold text-lg h-[50px]">JOIN OUR NEWSLETTER</h1>
 
-                    <p>Get the lastest updates on new products and upcoming sales.</p>
+                    <div className="flex flex-col">
+                        <p>Get the lastest updates on new products and upcoming sales.</p>
 
-                    <Link href="/register" className="w-max mt-2 px-4 py-2 bg-cyan-400 text-white font-bold transform transition-all duration-200 rounded-lg hover:-rotate-6 hover:scale-110">Subcribe</Link>
+                        <Link href="/register" className="w-max mt-2 px-4 py-2 bg-cyan-400 text-white font-bold transform transition-all duration-200 rounded-lg hover:-rotate-6 hover:scale-110">Subcribe</Link>
+                    </div>
                 </div>
             </div>
             <div className="flex justify-between">
